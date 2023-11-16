@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <style>
+        body{
+            width: 1000px;
+            margin: 0px auto;
+        }
+
+        label, input {
+            display: inline-block;
+        }
+        label{
+            margin-top:20px;
+            width: 100px;
+        }
+        input {
+            padding: 3px;
+            width: 200px;
+            border: 1px solid #ccc;
+        }
+
+        input[type=submit]{
+            display: block;
+            margin: 20px 0;
+            
+        }
+        </style>
+</head>
+<body>
+    <header><h1>FORMULARZ</h1></header>
+    <main>
+        <form action="plik23.html" method="post" enctype="multipart/form-data">
+            <fieldset>
+            <label> Data Wylotu : </label>
+            <input type="date" name="data" id="data"><br>
+            <label>Miejsce Wylotu : </label>
+            <select name="wylot" multiple size="3">
+                <option>Warzawa</option>
+                <option>Oslo</option>
+                <option>Kopenhaga</option>
+            </select>
+                
+            <br>
+                
+            <label>Miejsce Docelowe : </label> 
+            <select name="docelowe"  multiple size="3">
+                <option>Katowice</option>
+                <option>Jezrozolima</option>
+                <option>Tokyo</option>
+            </select>
+                
+            <br>
+                
+            <label>Ilość osob: </label>
+            <input type="number" placeholder="podaj ilość osób" min="1">
+                
+            <br>
+                
+            <label>Wybór Klasy: </label> 
+            <label>Ekonomiczna</label>
+            <input type="radio" name="ekonomiczna" value="ekonomiczna">
+            <label>Pierwsza</label>
+            <input type="radio" name="Pierwsza" value="Pierwsza">
+            <label>Biznes</label>
+            <input type="radio" name="Biznes" value="Biznes">
+                
+            <br>
+            <label>Pasażer bedzie posiadał bagaż rejestrowany (w luku) :</label><br>
+            <label>Tak</label><input type="checkbox">
+            <label>Nie</label><input type="checkbox">
+            <br>
+            <label>Pasażer zgadza się na przesiadki :</label><br>
+            <label>Tak</label><input type="checkbox">
+            <label>Nie</label><input type="checkbox">
+            </fieldset>
+            <fieldset>
+            <label>Imię I nazwisko :</label>
+            <input type="text" name="imieinazwisko" placeholder="podaj imie oraz nazwisko">
+            <br>
+            <label>Email :</label>
+            <input type="email" name="email" placeholder="podaj e-mail">
+            <br>
+            <label>Numer Telefonu :</label>
+            <input type="tel" name="numertelefonu" placeholder="podaj numer telefonu">
+            </fieldset>
+            <fieldset>
+            <label>Czy zechciałbyś się podzielić z nami twoimi uwagami? : </label><br>
+            <textarea name="spostrzezenia" cols="60" rows="15" placeholder="Podziel sie uwagami"></textarea>
+            </fieldset>
+        </form>
+
+        
+
+
+    
+    </main>
+</body>
+</html>
